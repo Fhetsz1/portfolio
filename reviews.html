@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviews — YourName</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Your<span>Name</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rules.html">Rules</a>
+      <a href="reviews.html" class="active">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <p class="eyebrow">Tell me how I did</p>
+      <h1 class="page-title">Reviews</h1>
+      <p class="muted">
+        Your review gets sent straight to my Discord. Be honest — but keep it friendly.
+      </p>
+    </section>
+
+    <section class="card">
+      <form id="review-form" novalidate>
+        <div class="field">
+          <label for="rv-name">Your name</label>
+          <input id="rv-name" type="text" maxlength="60" placeholder="e.g. Alex" autocomplete="name" required />
+        </div>
+
+        <div class="field">
+          <label>Your rating</label>
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 stars">★</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars">★</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars">★</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars">★</label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 star">★</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="rv-text">Your review</label>
+          <textarea id="rv-text" rows="5" maxlength="1000" placeholder="What was it like working / talking with me?" required></textarea>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="rv-website">Website</label>
+          <input id="rv-website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button id="submit-btn" class="btn btn-primary" type="submit">Send review</button>
+        <p id="form-status" class="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> YourName — built with GitHub Pages</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="config.js"></script>
+  <script src="reviews.js"></script>
+  <script src="effects.js"></script>
+</body>
+</html>
