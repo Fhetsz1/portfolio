@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — YourName</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Your<span>Name</span></a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="rules.html">Rules</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Welcome to my page</p>
+      <h1 class="hero-title">Your <span class="grad">Name</span></h1>
+      <p class="hero-sub">
+        Short tagline goes here — what you do, what you offer, and when you're usually online.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="contact.html">Contact me</a>
+        <a class="btn btn-ghost" href="reviews.html">Leave a review</a>
+      </div>
+    </section>
+
+    <section class="embed-section">
+      <h2>Featured</h2>
+      <!--
+        👇 REPLACE the two <p> tags with whatever you want.
+        If you want a real embed, paste an <iframe> instead:
+
+        <iframe src="https://example.com" title="Embed" loading="lazy" allowfullscreen></iframe>
+      -->
+      <div class="embed-box">
+        <p class="embed-main">Your embed goes here.</p>
+        <p class="muted">Replace this text with anything — or paste an &lt;iframe&gt; in its place.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> YourName — built with GitHub Pages</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="effects.js"></script>
+</body>
+</html>
