@@ -1,3 +1,3 @@
 window.CONFIG = {
-  webhookUrl: "https://discord.com/api/webhooks/1561408195895754955/PpuDhj35U1pUt1PkmfIhMiiILtn64NcvwH6oQiaxi40FVw5Mc8CiFJuvxcImk-1-x3Vg",
+  webhookUrl: "https://discord.com/api/webhooks/1566365396200587274/_zWhtrJhK2usb6Ry0Gvs0cL6XMvaMvLldY5eDUrOwdngAn84npcoDSdoGeyJ0PIME7A2",
 };
